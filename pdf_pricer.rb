@@ -44,6 +44,7 @@ class PDF
     end
 
     if is_premium_book && (pages_of_text > 300 || total_pages_images >= 5) && !is_frecuent_client
+
       actual_price *= 2
     end
 
@@ -52,6 +53,3 @@ class PDF
 end
 
 
-book = PDF.new(300, 2, 5, false, true)
-puts book.bind_book_price(false) # 8000
-puts book.bind_book_price(true) # 4000

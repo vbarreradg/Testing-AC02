@@ -60,6 +60,7 @@ pages_of_text = 495
 # total_pages = 501
 is_premium_book = True
 ```
+Output: 10000
 
 ##### TC2:
 Cumple con TR4, TR6, TR8, TR10, TR12, TR15
@@ -74,11 +75,13 @@ pages_of_text = 100
 is_premium_book = False
 ```
 
+Output: 8000
+
 ##### TC3:
 Cumple con TR1
 ```
 is_hardcover = False
-is_frequent_client = -
+is_frequent_client = False
 double_pages_images = 1
 images = 1
 # total_pages_images = 3
@@ -86,6 +89,8 @@ pages_of_text = 100
 # total_pages = 103
 is_premium_book = False
 ```
+
+Output: 4000
 
 |     | A     | B     | C     | D     | E     | F     | G     | H     |
 |-----|-------|-------|-------|-------|-------|-------|-------|-------|
@@ -158,12 +163,13 @@ pages_of_text = 495
 # total_pages = 501
 is_premium_book = True
 ```
+Output: 10000
 
 ##### TC2:
 
 Se cumplen TR2, TR6, TR15
 ```
-is_hardcover = True
+is_hardcover = False
 is_frequent_client = False
 double_pages_images = 2
 images = 2
@@ -172,6 +178,7 @@ pages_of_text = 294
 # total_pages = 300
 is_premium_book = True
 ```
+Output: 8000
 
 ##### TC3:
 
@@ -186,6 +193,7 @@ pages_of_text = 500
 # total_pages = 503
 is_premium_book = True
 ```
+Output: 16000
 
 ##### TC4:
 
@@ -200,6 +208,7 @@ pages_of_text = 297
 # total_pages = 300
 is_premium_book = True
 ```
+Output: 8000
 
 ##### TC5:
 
@@ -214,3 +223,4 @@ pages_of_text = 301
 # total_pages = 307
 is_premium_book = False
 ```
+Output: 8000
