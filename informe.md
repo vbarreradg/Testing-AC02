@@ -1,6 +1,7 @@
 
 # Actividad 2
-María Josefina Alliende y Valentina Barrera
+María Josefina Alliende, moalliende@uc.cl, 15635058 
+Valentina Barrera, vpbarrera@uc.cl, 15633268
 
 ## Clause Coverage
 
@@ -161,7 +162,7 @@ is_premium_book = True
 ```
 
 | A     | B     | C     | D     | E     | F     | G     | H     |
-|-----|-------|-------|-------|-------|-------|-------|-------|-------|
+|-----|-------|-------|-------|-------|-------|-------|-------|
 | True  | True  | True  | True  | True  | True  | True  | False |
 
 Output: 10000
@@ -181,7 +182,7 @@ is_premium_book = True
 ```
 
 | A     | B     | C     | D     | E     | F     | G     | H     |
-|-----|-------|-------|-------|-------|-------|-------|-------|-------|
+|-----|-------|-------|-------|-------|-------|-------|-------|
 | False  |   -   | False  | True  | True  | False  | True  | True |
 
 Output: 8000
@@ -201,7 +202,7 @@ is_premium_book = True
 ```
 
 | A     | B     | C     | D     | E     | F     | G     | H     |
-|-----|-------|-------|-------|-------|-------|-------|-------|-------|
+|-----|-------|-------|-------|-------|-------|-------|-------|
 | True  | False  | True  | False  | True  | True  | False  | True |
 
 Output: 16000
@@ -221,7 +222,7 @@ is_premium_book = True
 ```
 
 | A     | B     | C     | D     | E     | F     | G     | H     |
-|-----|-------|-------|-------|-------|-------|-------|-------|-------|
+|-----|-------|-------|-------|-------|-------|-------|-------|
 | True  | False  | False  | False  | True  | False  | False  | True |
 
 Output: 8000
@@ -241,7 +242,7 @@ is_premium_book = False
 ```
 
 | A     | B     | C     | D     | E     | F     | G     | H     |
-|-----|-------|-------|-------|-------|-------|-------|-------|-------|
+|-----|-------|-------|-------|-------|-------|-------|-------|
 | True  | False  | False  | True  | False  | True  | True  | True |
 
 Output: 8000

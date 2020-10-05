@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-10-03T13:06:24-03:00">2020-10-03T13:06:24-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-10-04T21:33:01-03:00">2020-10-04T21:33:01-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -136,7 +136,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#28555a0eaa9d891751c04e5aa7bdafdfceb737d2" class="src_link" title="tests/pdf_pricer_lc_spec.rb">tests/pdf_pricer_lc_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">17</td>
+            <td class="cell--number">15</td>
             <td class="cell--number">9</td>
             <td class="cell--number">9</td>
             <td class="cell--number">0</td>
@@ -1893,7 +1893,7 @@
               
             
 
-            <code class="ruby">  it &quot;Test todo es verdadero&quot; do</code>
+            <code class="ruby">  it &quot;Test entra a los 3 primeros if&quot; do</code>
           </li>
         </div>
       
@@ -1932,20 +1932,20 @@
               
             
 
-            <code class="ruby">  it &quot;Test entra a los else&quot; do</code>
+            <code class="ruby">  it &quot;Test entra a los else y al último if&quot; do</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="13">
-            
+          <li class="covered" data-hits="1" data-linenumber="13">
+            <span class="hits">1</span>
             
 
             
               
             
 
-            <code class="ruby">    # Este test está a proposito mal para que puedan ver en consola como </code>
+            <code class="ruby">    expect(pdf2.bind_book_price(false)).to eq(16000) </code>
           </li>
         </div>
       
@@ -1958,38 +1958,12 @@
               
             
 
-            <code class="ruby">    # rspect reporta un test cuando falla</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="15">
-            <span class="hits">1</span>
-            
-
-            
-              
-            
-
-            <code class="ruby">    expect(pdf2.bind_book_price(false)).to eq(16000) # Debe ser 4.5</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="16">
-            
-            
-
-            
-              
-            
-
             <code class="ruby">  end</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="17">
+          <li class="never" data-hits="" data-linenumber="15">
             
             
 
