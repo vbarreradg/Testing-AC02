@@ -1,7 +1,7 @@
 
 # Actividad 2
-María Josefina Alliende, moalliende@uc.cl, 15635058 
-Valentina Barrera, vpbarrera@uc.cl, 15633268
+- María Josefina Alliende, moalliende@uc.cl, 15635058 
+- Valentina Barrera, vpbarrera@uc.cl, 15633268
 
 ## Clause Coverage
 
