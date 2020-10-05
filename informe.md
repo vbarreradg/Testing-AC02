@@ -46,7 +46,6 @@ H: !is_frecuent_client
 - TR16: H es False
 
 #### Test Cases
-- TR2: A es False
 
 ##### TC1: 
 Cumple con TR1, TR3, TR5, TR7, TR13, TR11, TR9, TR16
@@ -63,7 +62,7 @@ is_premium_book = True
 Output: 10000
 
 ##### TC2:
-Cumple con TR4, TR6, TR8, TR10, TR12, TR15
+Cumple con TR4, TR6, TR8, TR10, TR12, TR14, TR15
 ```
 is_hardcover = True
 is_frequent_client = False
@@ -78,7 +77,7 @@ is_premium_book = False
 Output: 8000
 
 ##### TC3:
-Cumple con TR1
+Cumple con TR2
 ```
 is_hardcover = False
 is_frequent_client = False
@@ -136,9 +135,9 @@ Cada claúsula activa debe tomar los valores True y False, al igual que los pred
 - TR8: D es False, c es True, P3 es False
 - TR9: E es True, f es True, h es True, P4 es True
 - TR10: E es False, g es True, h es True, P4 es False
-- TR11: H es True, e es True, f es True, P4 es True (contiene a 9)
+- TR11: H es True, e es True, f es True, P4 es True (duplicado con 9)
 - TR12: H es False, e es True, g es True, P4 es False
-- TR13: F es True, e es True, h es True y g es False, P4 es True
+- TR13: F es True, e es True, h es True y g es False, P4 es True (contiene a 11)
 - TR14: F es False, e es True, h es True y g es False, P4 es False
 - TR15: G es True, e es True, h es True y f es False, P4 es True
 - TR16: G es False, e es True, h es True y f es False, P4 es False (duplicado con TR14)
@@ -146,9 +145,6 @@ Cada claúsula activa debe tomar los valores True y False, al igual que los pred
 Como se puede ver, hay algunos que están repetidos, como el TR7 con el TR5, o que contienen a otros, como el TR11 que contiene al TR9, pero se escribieron separadamente para que quede claro cuál claúsula activa es la que se busca cubrir con ese test requirement.
 
 #### Test Cases
-
-- TR10: E es False, g es True, h es True, P4 es False
-
 
 ##### TC1:
 
@@ -163,6 +159,11 @@ pages_of_text = 495
 # total_pages = 501
 is_premium_book = True
 ```
+
+| A     | B     | C     | D     | E     | F     | G     | H     |
+|-----|-------|-------|-------|-------|-------|-------|-------|-------|
+| True  | True  | True  | True  | True  | True  | True  | False |
+
 Output: 10000
 
 ##### TC2:
@@ -178,6 +179,11 @@ pages_of_text = 294
 # total_pages = 300
 is_premium_book = True
 ```
+
+| A     | B     | C     | D     | E     | F     | G     | H     |
+|-----|-------|-------|-------|-------|-------|-------|-------|-------|
+| False  |   -   | False  | True  | True  | False  | True  | True |
+
 Output: 8000
 
 ##### TC3:
@@ -193,6 +199,11 @@ pages_of_text = 500
 # total_pages = 503
 is_premium_book = True
 ```
+
+| A     | B     | C     | D     | E     | F     | G     | H     |
+|-----|-------|-------|-------|-------|-------|-------|-------|-------|
+| True  | False  | True  | False  | True  | True  | False  | True |
+
 Output: 16000
 
 ##### TC4:
@@ -208,6 +219,11 @@ pages_of_text = 297
 # total_pages = 300
 is_premium_book = True
 ```
+
+| A     | B     | C     | D     | E     | F     | G     | H     |
+|-----|-------|-------|-------|-------|-------|-------|-------|-------|
+| True  | False  | False  | False  | True  | False  | False  | True |
+
 Output: 8000
 
 ##### TC5:
@@ -223,4 +239,9 @@ pages_of_text = 301
 # total_pages = 307
 is_premium_book = False
 ```
+
+| A     | B     | C     | D     | E     | F     | G     | H     |
+|-----|-------|-------|-------|-------|-------|-------|-------|-------|
+| True  | False  | False  | True  | False  | True  | True  | True |
+
 Output: 8000
